@@ -1,0 +1,43 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.main{
+    /* 1st option */
+    position: relative;
+
+    /* 2nd option 
+    display: grid;
+    grid-auto-rows: 100vh; */
+
+}
+/* 1st option */
+/* .main .section {
+        height: 100vh;
+       
+} */
+
+.main .section {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.main #section1 {
+    background-image: url('../image/bg1.jpg');
+}
+
+.main #section2 {
+    background-image: url('../image/bg2.jpg');
+}
+.main #section3 {
+    background-image: url('../image/bg3.jpg');
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.main #section4 {
+    background-image: url('../image/bg4.jpg');
+}

@@ -1,0 +1,33 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .box:nth-child(1){
+        background: red;
+        height: 50px;
+        width: 200px;
+    }
+    .box:nth-child(2){
+        background: blue;
+        height: 50px;
+        width: 200px;
+    }
+    .box:nth-child(3){
+        background: green;
+        height: 50px;
+        width: 200px;
+    }
+    .box:nth-child(4){
+        background: yellow;
+        height: 50px;
+        width: 200px;
+    }
+}

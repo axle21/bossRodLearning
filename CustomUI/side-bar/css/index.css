@@ -1,0 +1,113 @@
+html , body {
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+  background-color: red;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main.show{
+    margin-left: 300px;
+    transition: margin 0.2s ease;
+}
+
+
+/* sidebar */
+
+.sidebar-main{
+    position: fixed;
+    background: gray;
+    height: 100vh;
+    width: 300px;
+    transition: margin 0.2s ease;
+
+    /* layout */
+    display: grid ;
+    grid-template-rows: 50px auto 1fr;
+    row-gap: 20px;
+}
+
+/* icon */
+
+.sidebar-main .icon-container{
+    position: fixed;
+    left: 300px;
+    height: 50px;
+    width: 50px;
+    background: gray;
+    border-radius: 0 50% 50% 0;
+    cursor: pointer;
+    transition: margin 0.2s ease;
+
+    
+
+    /*display*/
+    display: grid;
+    place-items: center;
+}
+
+
+
+/* logo */
+
+.sidebar-main .logo-container {
+    height: 150px;
+    /* width: 50px; */
+
+
+      /* Layout */
+    grid-row: 2/3;
+    display: grid;
+    place-self: center;
+}
+
+.sidebar-main .logo-container img {
+    height: 100%;
+    width: auto;
+}
+
+/*menu */
+
+.sidebar-main .menu-container {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+
+  /* layout*/
+  display: grid;
+  grid-row: 3/4 ;
+  grid-auto-rows: 60px;
+
+
+}
+
+.sidebar-main .menu-container li{ 
+
+    /* layout*/
+    display: grid;
+    place-items: center;
+  
+  
+  }
+
+.sidebar-main .menu-container li:hover{ 
+
+    background: whitesmoke;
+    cursor: pointer;
+  
+  }
+
+/* sidebar animation */
+.sidebar-main.hide, .sidebar-main.hide .icon-container{
+  margin-left: -300px;
+}
+
+.sidebar-main.show {
+  margin-left: 0;
+}
+

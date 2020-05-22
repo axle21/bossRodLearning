@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRid Row & Columns</title>
+</head>
+
+<style>
+    body, html{
+        padding: 0;
+        margin: 0;
+    }
+
+    .main {
+        height: 100vh;
+        background: gray;
+
+        /* grid */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+       
+    }
+    .section1{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background: red;
+    }
+
+    .section2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: blue;
+    }
+
+    .section3{
+        grid-column: 3/4;
+        background: yellow;
+        grid-row: 1/2;
+    }
+
+    .section4{
+        grid-column: 4/5;
+        background: green;
+        grid-row: 1/2;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="section1">Sectiion 1</div>
+        <div class="section2">Sectiion 2</div>
+        <div class="section3">Sectiion 3</div>
+        <div class="section4">Sectiion 4</div>
+         
+    </div>
+</body>
+</html>
